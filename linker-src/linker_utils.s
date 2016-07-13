@@ -172,7 +172,7 @@ atsl_end:
 	lw $s0, 16($sp)
 	lw $s1, 12($sp)
 	lw $s2, 8($sp)
-	sw $s3, 4($sp)
+	lw $s3, 4($sp)
 	lw $ra, 0($sp)
 	addiu $sp, $sp, 20
 	jr $ra
