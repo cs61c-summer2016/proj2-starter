@@ -99,7 +99,8 @@ write_machine_code_next_inst:
 	# YOUR_INSTRUCTIONS_HERE
 	
 	# 5. Here we handle relocation. Call relocate_inst() with the appropriate
-	# arguments, and store the relocated instruction in the appropriate register:
+	# arguments, and store the relocated instruction in the appropriate register.
+	# If error occurs, raise error.
 	# YOUR_INSTRUCTIONS_HERE
 
 write_machine_code_to_file:

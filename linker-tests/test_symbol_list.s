@@ -45,12 +45,12 @@ main:
 	la $a0, node3
 	jal test_addr_for_symbol
 	
-	print_newline()
-	la $a0, node3
-	jal test_symbol_for_addr
+	# print_newline()
+	# la $a0, node3
+	# jal test_symbol_for_addr
 	
-	print_newline()
-	jal test_add_to_list
+	# print_newline()
+	# jal test_add_to_list
 	
 	li $v0, 10
 	syscall
@@ -63,7 +63,7 @@ test_addr_for_symbol:
 	addiu $sp, $sp, -8
 	sw $a0, 4($sp)
 	sw $ra, 0($sp)
-	print_str(test_symbol_for_addr_name)
+	print_str(test_addr_for_symbol_name)
 	
 	lw $a0, 4($sp)
 	la $a1, test_label1
@@ -82,7 +82,7 @@ test_symbol_for_addr:
 	addiu $sp, $sp, -8
 	sw $a0, 4($sp)
 	sw $ra, 0($sp)
-	print_str(test_addr_for_symbol_name)
+	print_str(test_symbol_for_addr_name)
 
 	lw $a0, 4($sp)
 	li $a1, 3456
